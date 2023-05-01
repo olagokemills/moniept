@@ -1,0 +1,386 @@
+.product-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.25rem;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 0.75rem;
+    position: relative;
+    animation: slide-in-up 1s ease forwards;
+}
+
+#saleProduct{
+    background-color: #FBFBFB;
+    /* padding: 1rem; */
+}
+.product-card__head{
+    background-color: #eeeef1;
+    text-align: center;
+}
+.product-card__body{
+    padding: 0.75rem;
+    background-color: #F9FAFB;
+}
+.product-card img{
+    width:100%;
+    height: 150px;
+}
+.product-card h6{
+    color: #C3C3C3;
+    font-size: 0.8rem;
+}
+
+.product-like {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-card h5{
+    font-size: 0.8rem;
+    color: #1f2028;
+}
+.product-rating .fas{
+    color:#F29E39  !important;
+}
+.product-rating{
+    font-size: 0.65rem;
+    align-self: center;
+    color: #C3C3C3;
+}
+.product-price{
+    color: #4AB198;
+    font-size: 1rem;
+}
+.category-icon{
+    color: #666973;
+    background-color: #F6F6F6;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin-bottom: 0.25rem;
+}
+.category-wrapper{
+    display: flex;
+    justify-content: space-around;
+    padding:1rem 1.5rem;
+    text-align: center;
+}
+.category-item h6{
+    margin-top:0.75rem;
+    font-size: 0.8rem;
+    color: #C3C3C3;
+}
+
+.cards {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background-color: inherit;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+  
+  .card-content {
+    padding: 20px;
+  }
+.ripple {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    animation: rippleEffect 1s linear forwards;
+  }
+  
+  @keyframes rippleEffect {
+    from {
+      transform: scale(0);
+      opacity: 1;
+    }
+    to {
+      transform: scale(5);
+      opacity: 0;
+    }
+  }
+
+
+  
+
+
+
+  .pointer-effect {
+    position: relative;
+  }
+  
+  .pointer-effect button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .pointer-effect .pointer-circle-1,
+  .pointer-effect .pointer-circle-2,
+  .pointer-effect .pointer-circle-3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+  
+  .pointer-effect .pointer-circle-1 {
+    width: 30px;
+    height: 30px;
+    animation: pointer-effect-circle-1 0.4s ease-out;
+  }
+  
+  .pointer-effect .pointer-circle-2 {
+    width: 40px;
+    height: 40px;
+    animation: pointer-effect-circle-2 0.5s ease-out;
+  }
+  
+  .pointer-effect .pointer-circle-3 {
+    width: 50px;
+    height: 50px;
+    animation: pointer-effect-circle-3 0.6s ease-out;
+  }
+  
+  @keyframes pointer-effect-circle-1 {
+    0% {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+  
+  @keyframes pointer-effect-circle-2 {
+    0% {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+  
+  @keyframes pointer-effect-circle-3 {
+    0% {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+  
+
+.header-txt{
+
+}
+  .more-txt{
+    color: #4AB198;
+    font-size: 0.8rem;
+  }
+
+
+
+
+
+/* slider css */
+
+.slider-container {
+    position: relative;
+  }
+  
+  .slides {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .slides::-webkit-scrollbar {
+    display: none;
+  }
+  .slide {
+    scroll-snap-align: center;
+    flex-shrink: 0;
+    width: 100%;
+  }
+  .slide img {
+    width: 100%;
+    height: auto;
+  }
+  .prev,.next{
+    right: -9999px;
+    position: fixed;
+  }
+  
+
+/* draggin css */
+.containers {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .drag {
+    transition: transform 1s ease-in-out;
+    transform: translateY(5px);
+  }
+  
+  .content {
+    padding: 20px;
+  }
+
+
+  /* shop css */
+
+  /* Navigation bar animation */
+.cart-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #F8F7FA;
+    height: 50px;
+    position: sticky;
+    top: 74px;
+    width: 100%;
+    z-index: 99;
+    transition: all 0.5s ease;
+  }
+
+
+  .fixed-section {
+    position: relative;
+    z-index: 1;
+  }
+  .fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+
+/* circle css */
+.circle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .circle {
+    position: absolute;
+    width:100px;
+    height: 100px;
+    /* border: 2px solid #fff; */
+    border-radius: 50%;
+    box-sizing: border-box;
+    opacity: 0.4;
+    animation: ripple 1s linear infinite;
+    animation-delay: 0s; /* Add this line */
+  }
+  
+  .circle1 {
+    border-width: 3px;
+    z-index: 3;
+    border: 2px solid red;
+  }
+  
+  .circle2 {
+    border-width: 6px;
+    z-index: 2;
+    border: 2px solid green;
+    animation-delay: -0.33s; /* Add this line */
+  }
+  
+  .circle3 {
+    border-width: 9px;
+    z-index: 1;
+    border: 2px solid blue;
+    animation-delay: -0.66s; /* Add this line */
+  }
+  
+  @keyframes ripple {
+    0% {
+      transform: scale(0);
+      opacity: 0.4;
+    }
+    100% {
+      transform: scale(1.5);
+      opacity: 0;
+    }
+  }
+    
+  .def-circle{
+    border: 2px solid black;
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 50%;
+  }
+
+
+
+.content-container footer{
+    overflow: hidden;
+}
+
+  /* CSS for the last element of the content container */
+  .content-container .last-element {
+    margin-bottom: 50px; /* equal to the footer height */
+  }
+
+
+
+  /* slide in css */
+  .slide-in-up {
+    animation: slide-in-up 1s ease forwards;
+  }
+  
+  @keyframes slide-in-up {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }

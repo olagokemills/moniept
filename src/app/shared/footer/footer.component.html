@@ -1,0 +1,50 @@
+<div id="tabFooter">
+    <ng-container *ngIf="Helper.isHome">
+
+        <ul >
+            <li class="active">
+                <div class="d-flex flex-column text-center">
+                    <i class="fa fa-home"></i>
+                    <h6>Home</h6>
+                </div>
+            </li>
+            <li>
+                <div class="d-flex flex-column text-center">
+                <i class="fa fa-ticket-alt"></i>
+                <h6>Settings</h6></div>
+            </li>
+            <li>
+                <div class="d-flex flex-column text-center">
+                <i class="fa fa-wallet"></i>
+                <h6>Wallet</h6></div>
+            </li>
+            <li>
+                <div class="d-flex flex-column text-center">
+                <i class="fa fa-toolbox"></i>
+                <h6>Settings</h6></div>
+            </li>
+        </ul>
+
+    </ng-container>
+ 
+<ng-container  *ngIf="!Helper.isHome">
+
+    <ul>
+        <div class="row col-12 h-100">
+          <div class="col-4 d-flex flex-column align-content-center">
+            <small class="price-type">Total Price</small>
+            <h4 class="price">$18.00</h4>
+          </div>
+          <div class="col-8">
+            <div class="input-group">
+              <div class="input-group-text justify-content-center" id="btnGroupAddon2"><span class="cart-alt"><i class="fa fa-shopping-bag"> </i>  1</span></div>
+              <button type="button" class="btn btn-cus flex-fill">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </ul>
+</ng-container>
+ 
+
+</div>
+

@@ -1,0 +1,17 @@
+<div class="section1">
+    <div class="header">
+      First Header
+    </div>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium odio quis molestiae dolorem. Dolore sed, unde inventore facilis quidem natus alias in, sint quibusdam temporibus non vitae quisquam iusto enim?</p>
+  </div>
+  
+  <div class="section2" [ngClass]="{ 'fixed': isFixed }">
+    <div class="header">Header 2</div>
+    <div class="content">
+      <div *ngFor="let card of cardList" class="card">
+        <h3>{{ card.title }}</h3>
+        <p>{{ card.description }}</p>
+      </div>
+    </div>
+  </div>
+  

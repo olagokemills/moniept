@@ -1,0 +1,121 @@
+/* Navigation bar animation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: inherit;
+    z-index: 99;
+    transition: all 0.5s ease;
+  }
+
+  nav.scrolled {
+    background-color: #fff !important;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 1px;
+  }
+
+  .input-wrapper{
+    border-radius: 5px;
+    border: 1px solid #CCCFD3;
+    padding: 0.5rem;
+  }
+  .input-wrapper .fa{
+    color: #CCCFD3;
+  }
+  .input-wrapper input{
+    background-color: inherit;
+    outline: 0;
+    border: 0;
+    padding-left: 10px;
+    color: #CCCFD3;
+  }
+
+  /* Search bar animation */
+.search-bar {
+    position: relative;
+  }
+  
+  .search-bar input {
+    border: none;
+    padding: 10px 60px 10px 20px;
+    border-radius: 50px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease;
+  }
+  
+  .search-bar input:focus {
+    outline: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  .search-bar button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 60px;
+    border: none;
+    border-radius: 50px;
+    background-color: #ff7c5c;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+  }
+  
+  .search-bar button:hover {
+    background-color: #fff;
+    color: #ff7c5c;
+  }
+  
+  /* icons */
+  .icon-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .icon-wrapper button{
+    padding: 0.25rem;
+  }
+  .icon-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #C6C9CB;
+    background: inherit;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    font-size: 22px;
+  }
+  
+  .icon-button:hover {
+    cursor: pointer;
+  }
+  
+  .icon-button:active {
+    background: #cccccc;
+  }
+  
+  .icon-button__badge {
+    position: absolute;
+    top: -7px;
+    right: -7px;
+    width: 20px;
+    height: 20px;
+    background: #E55986;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25%;
+    font-size: 0.65rem;
+  }
+  

@@ -1,1 +1,35 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: "Satoshi Bold";
+    src: url("assets/fonts/satoshi/Satoshi-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Satoshi Light";
+    src: url("assets/fonts/Satoshi/Satoshi-Light.ttf");
+}
+@font-face {
+    font-family: "Satoshi Regular";
+    src: url("assets/fonts/Satoshi/Satoshi-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Satoshi Medium";
+    src: url("assets/fonts/Satoshi/Satoshi-Medium.ttf");
+}
+
+body{
+    font-family: "Satoshi Regular";
+    font-size: 0.9rem;
+    color: #1F2028;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Satoshi Bold";
+}
+button, a, input, textarea{
+    outline: none;
+    border: none;
+    font-family: "Satoshi Medium";
+}

@@ -1,0 +1,55 @@
+<nav class="navbar header-one">
+    <div class="container-fluid p-0" *ngIf="Helper.isHome">
+       <div>
+            <div class="input-wrapper">
+                <i class="fa fa-search"></i>
+                <input class="" type="text" placeholder="Search" />
+            </div>
+       </div>
+        <div class="icon-wrapper">
+            <div class="px-2">
+                <button type="button" class="icon-button">
+                    <i class="fa fa-shopping-bag"> </i>  
+                     <span class="icon-button__badge">2</span>
+                 </button>
+            </div>
+           <div class="px-2">
+            <button type="button" class="icon-button">
+                <i class="fa fa-bell"> </i>  
+                 <span class="icon-button__badge">2</span>
+             </button>
+           </div>
+            
+        </div>
+    </div>
+    <div class="container-fluid p-0" *ngIf="!Helper.isHome">
+        <div class="icon-wrapper">
+            <div class="px-2">
+                <button type="button" class="icon-button">
+                    <i class="fa fa-angle-left"> </i>  
+                 </button>
+            </div>
+        </div>
+        <div class="icon-wrapper">
+            <div class="px-2">
+                <button type="button" class="icon-button">
+                    <i class="fa fa-heart bg-white"> </i>  
+                 </button>
+            </div>
+            <div class="px-2">
+                <button type="button" class="icon-button">
+                    <i class="fa fa-share-alt"> </i>  
+                 </button>
+            </div>
+            <div class="px-2">
+                <button type="button" class="icon-button">
+                    <i class="fa fa-shopping-bag"> </i>  
+                     <span class="icon-button__badge">2</span>
+                 </button>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+  
