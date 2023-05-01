@@ -67,14 +67,14 @@
             <div class="row pt-3 px-3">
                 <div class="col-6 mb-3">
                     <div class="product-wrapper">
-                        <div class="product-card" (click)="createRipple($event)">
+                        <div class="product-card" (click)="routePage($event)">
                             <div class="product-card__head">
                                 <img src="assets/images/shirtss.png" alt="product image" />
                                 <div class="product-like">
                                     <i class="fas fa-heart"></i> 
                                 </div>
                             </div>
-                            <div class="product-card__body">
+                            <div class="product-card__body" (click)="onAreaClick($event)">
                                 <h6>Shirt</h6>
                                 <h5>Essential men's short-sleeve Crewnex T-shirt</h5>
                                 <div class="d-flex justify-content-between">
@@ -90,7 +90,30 @@
                 </div>
                 <div class="col-6 mb-3">
                     <div class="product-wrapper">
-                        <div class="product-card" (click)="createRipple($event)">
+                        <div class="product-card" (click)="routePage($event)">
+                            <div class="product-card__head">
+                                <img src="assets/images/shirtss.png" alt="product image" />
+                                <div class="product-like">
+                                    <i class="fas fa-heart"></i> 
+                                </div>
+                            </div>
+                            <div class="product-card__body">
+                                <h6>Shirt</h6>
+                                <h5>Essential men's short-sleeve Crewnex T-shirt</h5>
+                                <div class="d-flex justify-content-between">
+                                    <span class="product-rating">
+                                        <i class="fas fa-star"></i>
+                                        <span class="px-1">4.9 | 2356</span>
+                                    </span> 
+                                    <span class="product-price">$22.00</span>
+                                </div>
+                                 
+                            </div>
+                        </div>  
+                    </div>
+                </div><div class="col-6 mb-3">
+                    <div class="product-wrapper">
+                        <div class="product-card" (click)="routePage($event)">
                             <div class="product-card__head">
                                 <img src="assets/images/shirtss.png" alt="product image" />
                                 <div class="product-like">
@@ -112,7 +135,7 @@
                     </div>
                 </div><div class="col-6 mb-3">
                     <div class="product-wrapper">
-                        <div class="product-card" (click)="createRipple($event)">
+                        <div class="product-card" (click)="routePage($event)">
                             <div class="product-card__head">
                                 <img src="assets/images/shirtss.png" alt="product image" />
                                 <div class="product-like">
@@ -134,29 +157,7 @@
                     </div>
                 </div><div class="col-6 mb-3">
                     <div class="product-wrapper">
-                        <div class="product-card" (click)="createRipple($event)">
-                            <div class="product-card__head">
-                                <img src="assets/images/shirtss.png" alt="product image" />
-                                <div class="product-like">
-                                    <i class="fas fa-heart"></i> 
-                                </div>
-                            </div>
-                            <div class="product-card__body">
-                                <h6>Shirt</h6>
-                                <h5>Essential men's short-sleeve Crewnex T-shirt</h5>
-                                <div class="d-flex justify-content-between">
-                                    <span class="product-rating">
-                                        <i class="fas fa-star"></i>
-                                        <span class="px-1">4.9 | 2356</span>
-                                    </span> 
-                                    <span class="product-price">$22.00</span>
-                                </div>
-                            </div>
-                        </div>  
-                    </div>
-                </div><div class="col-6 mb-3">
-                    <div class="product-wrapper">
-                        <div class="product-card" (click)="createRipple($event)">
+                        <div class="product-card" (click)="routePage($event)">
                             <div class="product-card__head">
                                 <img src="assets/images/shirtss.png" alt="product image" />
                                 <div class="product-like">
@@ -178,7 +179,7 @@
                     </div>
                 </div><div class="col-6">
                     <div class="product-wrapper">
-                        <div class="product-card" (click)="createRipple($event)">
+                        <div class="product-card" (click)="routePage($event)">
                             <div class="product-card__head">
                                 <img src="assets/images/shirtss.png" alt="product image" />
                                 <div class="product-like">
@@ -200,7 +201,7 @@
                     </div>
                 </div><div class="col-6">
                     <div class="product-wrapper">
-                        <div class="product-card" (click)="createRipple($event)">
+                        <div class="product-card" (click)="routePage($event)">
                             <div class="product-card__head">
                                 <img src="assets/images/shirtss.png" alt="product image" />
                                 <div class="product-like">
@@ -222,29 +223,7 @@
                     </div>
                 </div><div class="col-6">
                     <div class="product-wrapper">
-                        <div class="product-card" (click)="createRipple($event)">
-                            <div class="product-card__head">
-                                <img src="assets/images/shirtss.png" alt="product image" />
-                                <div class="product-like">
-                                    <i class="fas fa-heart"></i> 
-                                </div>
-                            </div>
-                            <div class="product-card__body">
-                                <h6>Shirt</h6>
-                                <h5>Essential men's short-sleeve Crewnex T-shirt</h5>
-                                <div class="d-flex justify-content-between">
-                                    <span class="product-rating">
-                                        <i class="fas fa-star"></i>
-                                        <span class="px-1">4.9 | 2356</span>
-                                    </span> 
-                                    <span class="product-price">$22.00</span>
-                                </div>
-                            </div>
-                        </div>  
-                    </div>
-                </div><div class="col-6">
-                    <div class="product-wrapper">
-                        <div class="product-card" (click)="createRipple($event)">
+                        <div class="product-card" (click)="routePage($event)">
                             <div class="product-card__head">
                                 <img src="assets/images/shirtss.png" alt="product image" />
                                 <div class="product-like">
@@ -265,14 +244,53 @@
                         </div>  
                     </div>
                 </div>
-                <!-- <div class="col-6">
-                      <div class="circle-container">
-                        <div class="circle circle1"></div>
-                        <div class="circle circle2"></div>
-                        <div class="circle circle3"></div>
-                      </div>  
-                </div> -->
-            
+                <div class="col-6">
+                    <div class="product-wrapper">
+                        <div class="product-card" (click)="routePage($event)">
+                            <div class="product-card__head">
+                                <img src="assets/images/shirtss.png" alt="product image" />
+                                <div class="product-like">
+                                    <i class="fas fa-heart"></i> 
+                                </div>
+                            </div>
+                            <div class="product-card__body">
+                                <h6>Shirt</h6>
+                                <h5>Essential men's short-sleeve Crewnex T-shirt</h5>
+                                <div class="d-flex justify-content-between">
+                                    <span class="product-rating">
+                                        <i class="fas fa-star"></i>
+                                        <span class="px-1">4.9 | 2356</span>
+                                    </span> 
+                                    <span class="product-price">$22.00</span>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="product-wrapper">
+                        <div class="product-card" (click)="routePage($event)">
+                            <div class="product-card__head">
+                                <img src="assets/images/shirtss.png" alt="product image" />
+                                <div class="product-like">
+                                    <i class="fas fa-heart"></i> 
+                                </div>
+                            </div>
+                            <div class="product-card__body">
+                                <h6>Shirt</h6>
+                                <h5>Essential men's short-sleeve Crewnex T-shirt</h5>
+                                <div class="d-flex justify-content-between">
+                                    <span class="product-rating">
+                                        <i class="fas fa-star"></i>
+                                        <span class="px-1">4.9 | 2356</span>
+                                    </span> 
+                                    <span class="product-price">$22.00</span>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                   
             </div>
 
         </div>

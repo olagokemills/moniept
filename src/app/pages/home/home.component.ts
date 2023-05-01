@@ -25,8 +25,10 @@ export class HomeComponent implements OnInit{
 
   private intersectionObserver!: IntersectionObserver;
 
+  // constructor() {}
   constructor(
-    private router: Router
+    private router: Router,
+    private renderer: Renderer2, private el: ElementRef
   ){ }
 
   slideIndex = 1;
@@ -70,24 +72,21 @@ export class HomeComponent implements OnInit{
     }
   }
 
-  createRipple(data:any){
-    this.router.navigate(['/details'])
+  routePage(data:any){
+     this.router.navigate(['/details'])
   }
 
-
-  // handleIntersection = (entries: IntersectionObserverEntry[]) => {
-  //   entries.forEach((entry) => {
-  //     console.log(entries)
-  //     if (entry.isIntersecting) {
-  //       console.log('in view')
-  //       this.renderer.addClass(entry.target, 'slide-in-up');
-  //     } else {
-  //       //console.log('out of view')
-  //       // this.renderer.removeClass(entry.target, 'slide-in-up');
-  //     }
-  //   });
-  // };
-
-
+  onAreaClick(event:any) {
+    console.log('can yousee me')
+    const x = event.clientX;
+    const y = event.clientY;
+  
+    const hiddenDiv = this.renderer.selectRootElement('.circle-container');
+  
+    this.renderer.setStyle(hiddenDiv, 'display', 'flex');
+    this.renderer.setStyle(hiddenDiv, 'position', 'absolute');
+    this.renderer.setStyle(hiddenDiv, 'left', x + 'px');
+    this.renderer.setStyle(hiddenDiv, 'top', y + 'px');
+  }
 
 }
