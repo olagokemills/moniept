@@ -22,9 +22,10 @@
   #tabFooter ul li {
     display: inline-block;
     height: 100%;
+    font-family: 'Satoshi Light';
   }
   
-  #tabFooter ul li a {
+  /* #tabFooter ul li a {
     display: block;
     height: 100%;
     width: 100%;
@@ -38,7 +39,7 @@
   #tabFooter ul li.active a {
     background-color: #333;
     color: #fff;
-  }
+  } */
   
   #tabContent {
     position: relative;
@@ -65,10 +66,40 @@
   li{
     color: #91949B;
   }
-  li.active{
+  li.active a{
+    color: #4AB299;
+    font-family: 'Satoshi Bold' !important;
+  }
+  .active .fa{
     color: #4AB299;
   }
   li .fa{
     font-size: 22px;
+  }
+
+
+
+
+  #btnGroupAddon2 {
+    width: 80px;
+    height: 50px;
+    background-color: #48AF96;
+  }
+
+  .btn-cus {
+    background-color: #2A2E40;
+    color: #fff;
+  }
+
+  .cart-alt {
+    color: #fff;
+  }
+
+  .price-type {
+    color: #C3C3CF;
+  }
+
+  .price {
+    color: #48AF96
   }
   

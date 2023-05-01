@@ -16,7 +16,9 @@
     font-family: "Satoshi Medium";
     src: url("assets/fonts/Satoshi/Satoshi-Medium.ttf");
 }
-
+html{
+  scroll-behavior: smooth;
+}
 body{
     font-family: "Satoshi Regular";
     font-size: 0.9rem;

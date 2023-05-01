@@ -14,7 +14,6 @@
 
 #saleProduct{
     background-color: #FBFBFB;
-    /* padding: 1rem; */
 }
 .product-card__head{
     background-color: #eeeef1;
@@ -58,6 +57,7 @@
 .product-price{
     color: #4AB198;
     font-size: 1rem;
+    font-weight: 600;
 }
 .category-icon{
     color: #666973;
@@ -77,140 +77,12 @@
     font-size: 0.8rem;
     color: #C3C3C3;
 }
-
-.cards {
-    position: relative;
-    width: 300px;
-    height: 200px;
-    background-color: inherit;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-  }
-  
-  .card-content {
-    padding: 20px;
-  }
-.ripple {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    background-color: red;
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
-    animation: rippleEffect 1s linear forwards;
-  }
-  
-  @keyframes rippleEffect {
-    from {
-      transform: scale(0);
-      opacity: 1;
-    }
-    to {
-      transform: scale(5);
-      opacity: 0;
-    }
-  }
-
-
-  
-
-
-
-  .pointer-effect {
-    position: relative;
-  }
-  
-  .pointer-effect button {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    position: relative;
-    z-index: 1;
-  }
-  
-  .pointer-effect .pointer-circle-1,
-  .pointer-effect .pointer-circle-2,
-  .pointer-effect .pointer-circle-3 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 0;
-    height: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 50%;
-    opacity: 0;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-  }
-  
-  .pointer-effect .pointer-circle-1 {
-    width: 30px;
-    height: 30px;
-    animation: pointer-effect-circle-1 0.4s ease-out;
-  }
-  
-  .pointer-effect .pointer-circle-2 {
-    width: 40px;
-    height: 40px;
-    animation: pointer-effect-circle-2 0.5s ease-out;
-  }
-  
-  .pointer-effect .pointer-circle-3 {
-    width: 50px;
-    height: 50px;
-    animation: pointer-effect-circle-3 0.6s ease-out;
-  }
-  
-  @keyframes pointer-effect-circle-1 {
-    0% {
-      opacity: 1;
-      transform: translate(-50%, -50%) scale(0);
-    }
-    100% {
-      opacity: 0;
-      transform: translate(-50%, -50%) scale(1);
-    }
-  }
-  
-  @keyframes pointer-effect-circle-2 {
-    0% {
-      opacity: 1;
-      transform: translate(-50%, -50%) scale(0);
-    }
-    100% {
-      opacity: 0;
-      transform: translate(-50%, -50%) scale(1);
-    }
-  }
-  
-  @keyframes pointer-effect-circle-3 {
-    0% {
-      opacity: 1;
-      transform: translate(-50%, -50%) scale(0);
-    }
-    100% {
-      opacity: 0;
-      transform: translate(-50%, -50%) scale(1);
-    }
-  }
-  
-
-.header-txt{
-
-}
+ 
   .more-txt{
     color: #4AB198;
     font-size: 0.8rem;
+    font-family: 'Satoshi Medium';
   }
-
-
-
-
 
 /* slider css */
 
@@ -256,16 +128,13 @@
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
   }
-  
   .drag {
     transition: transform 1s ease-in-out;
     transform: translateY(5px);
   }
-  
   .content {
     padding: 20px;
   }
-
 
   /* shop css */
 
@@ -283,8 +152,6 @@
     z-index: 99;
     transition: all 0.5s ease;
   }
-
-
   .fixed-section {
     position: relative;
     z-index: 1;
@@ -347,27 +214,14 @@
       opacity: 0;
     }
   }
-    
-  .def-circle{
-    border: 2px solid black;
-    width: 50px;
-    height: 50px;
-    background: white;
-    border-radius: 50%;
-  }
-
-
 
 .content-container footer{
     overflow: hidden;
 }
-
   /* CSS for the last element of the content container */
-  .content-container .last-element {
+.content-container .last-element {
     margin-bottom: 50px; /* equal to the footer height */
-  }
-
-
+}
 
   /* slide in css */
   .slide-in-up {
